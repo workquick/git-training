@@ -13,6 +13,6 @@ class TestProgram(TestCase):
         result = program.main_program('range_type')
         self.assertIsInstance(result, list)
 
-    # def test_raise_error(self):
-    #     with self.assertRaises(IOError):
-    #         program.main_program('raise_error')
+    def test_raise_error(self):
+        with self.assertRaises(IOError):
+            program.main_program('raise_error')

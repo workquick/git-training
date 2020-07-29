@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 import unittest
 from unittest import TestCase
 
@@ -16,3 +19,8 @@ class TestProgram(TestCase):
     def test_raise_error(self):
         with self.assertRaises(IOError):
             program.main_program('raise_error')
+
+    def test_returns_text(self):
+        result = program.main_program('text')
+        expected = u'русский текст'
+        self.assertEqual(result, expected)

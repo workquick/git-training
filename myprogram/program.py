@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 def main_program(arg):
     if arg == 'division':
         # In Py2, 3/2 returns 1
@@ -8,3 +11,5 @@ def main_program(arg):
     elif arg == 'raise_error':
         # In py3, raise IOError('file error')
         raise IOError, 'file error'
+    elif arg == 'text':
+        return u'русский текст'

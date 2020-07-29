@@ -1,5 +1,9 @@
+
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+# Примеры из https://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html
+# http://python3porting.com/improving.html#improving-chapter
+
 
 def main_program(arg):
     if arg == 'division':
